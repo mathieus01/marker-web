@@ -1,0 +1,62 @@
+<Form className="fade" onSubmit={handleSubmit} ref={formRef}>
+        <Row>
+          <div className="input-group">
+            <Select name="group_id" options={groups} placeholder="Grupos" />
+          </div>
+        </Row>
+        <Row>
+          <InputGroup>
+            <label htmlFor="name" className="label-name">
+              <span className="content-name">Nome</span>
+            </label>
+            <Input name="name" />
+          </InputGroup>
+          <InputGroup>
+            <label htmlFor="birthday" className="label-name">
+              <span className="content-name">Data de Nascimento</span>
+            </label>
+            <DatePicker name="birthday" />
+          </InputGroup>
+        </Row>
+        <InputGroup>
+          <Select name="gender" options={genders} placeholder="Genero" />
+        </InputGroup>
+        <InputGroup>
+          <label htmlFor="email" className="label-name">
+            <span className="content-name">Email</span>
+          </label>
+          <Input name="email" />
+        </InputGroup>
+        <Row>
+          <InputGroup>
+            <label htmlFor="birthday" className="label-name">
+              <span className="content-name">Profissão</span>
+            </label>
+            <Input name="occupation" />
+          </InputGroup>
+          <InputGroup>
+            <label htmlFor="Convenio" className="label-name">
+              <span className="content-name">Convenio</span>
+            </label>
+            <Input name="helthcare" />
+          </InputGroup>
+          <InputGroup>
+            <label htmlFor="comorbidades" className="label-name">
+              <span className="content-name">Comorbidades/Alergias</span>
+            </label>
+            <Input name="alergy" />
+          </InputGroup>
+        </Row>
+        <ButtonGroup>
+          <button
+            type="button"
+            onClick={(e) => props.close(false)}
+            className="btn btn-light"
+          >
+            Cancelar
+          </button>
+          <button type="submit" className="btn">
+            Salvar
+          </button>
+        </ButtonGroup>
+      </Form>

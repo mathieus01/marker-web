@@ -1,0 +1,98 @@
+ <Row className="fade">
+          <Card>
+            <Card insideCard>
+              <img src={ClockIcon} alt="agenda" />
+              <span>Agenda</span>
+            </Card>
+            <ul>
+              {schedules.length ? (
+                schedules.map(item => (
+                  <LinkRow to={`patient/${item.patient.id}`}>
+                    <li key={item.id}>
+                      <div className="content">
+                        <strong>{item.patient.name}</strong>
+                        <span>{item.cause}</span>
+                        <small>
+                          {item.date && moment(item.date).format("DD/MM/YYYY")}
+                        </small>
+                      </div>
+                      <div className="buttons">
+                        {item.type === "0" ? (
+                          <Chip
+                            variant="outlined"
+                            color="secondary"
+                            label="Emergencia"
+                          />
+                        ) : (
+                          <Chip
+                            variant="outlined"
+                            color="primary"
+                            label="Eletiva"
+                          />
+                        )}
+                      </div>
+                    </li>
+                  </LinkRow>
+                ))
+              ) : (
+                <li className="empty-data">Nenhuma atividade encontrada</li>
+              )}
+            </ul>
+          </Card>
+          <Card>
+            <Card insideCard>
+              <img src={DoctorTeamIcon} alt="team" />
+              <span>Grupos</span>
+            </Card>
+            <ul>
+              {groups.length ? (
+                groups.map(group => (
+                  <LinkRow to={`groups/${group.id}`}>
+                    <li key={group.id}>
+                      <div className="content">
+                        <span>{group.name}</span>
+                        <small>{group.users.length} Usuarios</small>
+                      </div>
+                      <div className="buttons">
+                        <img src={PlusIcon} alt="plus" />
+                      </div>
+                    </li>
+                  </LinkRow>
+                ))
+              ) : (
+                <ul>
+                  <li className="empty-data">Você não possui grupos</li>
+                </ul>
+              )}
+            </ul>
+          </Card>
+          <Card>
+            <Card insideCard>
+              <img src={HealthIcon} alt="pacientes" />
+              <span>Pacientes</span>
+            </Card>
+            <ul>
+              {patients.length ? (
+                patients.map(patient => (
+                  <LinkRow to={`patient/${patient.id}`}>
+                    <li key={patient.id}>
+                      <div className="content">
+                        <span>{patient.name}</span>
+                        <small>{patient.group.name}</small>
+                      </div>
+                      <div className="buttons">
+                        <button>
+                          <img src={PlusIcon} alt="plus" />
+                        </button>
+                      </div>
+                    </li>
+                  </LinkRow>
+                ))
+              ) : (
+                <ul>
+                  <li className="empty-data">Você não possui pacientes</li>
+                </ul>
+              )}
+            </ul>
+          </Card>
+        </Row>
