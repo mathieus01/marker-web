@@ -61,7 +61,7 @@ export const Container = styled.div`
         transition: border-bottom 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
         &:focus {
-          border-bottom: 2px solid #6e39ff;
+          border-bottom: 2px solid #078bf5;
         }
       }
 
@@ -71,7 +71,7 @@ export const Container = styled.div`
         padding: 8px 10px;
         margin-top: 15px;
         border: none;
-        background: #6e39ff;
+        background: #078bf5;
         color: #fff;
         font-size: 16px;
         letter-spacing: 0.5px;
@@ -84,7 +84,7 @@ export const Container = styled.div`
         text-decoration: none;
         font-size: 16px;
         font-weight: normal;
-        color: #6e39ff;
+        color: #078bf5;
 
         letter-spacing: 0.3px;
       }
@@ -96,7 +96,7 @@ export const Container = styled.div`
       a {
         text-decoration: none;
         color: #fff;
-        background: #6e39ff;
+        background: #078bf5;
         padding: 6px 14px;
         border-radius: 10px;
         letter-spacing: 0.5px;

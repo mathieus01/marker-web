@@ -1,4 +1,4 @@
-import { Drawer, makeStyles, Tab, Tabs } from '@material-ui/core';
+import { makeStyles, Tab, Tabs } from '@material-ui/core';
 import moment from 'moment';
 import React, { useEffect, useState } from 'react';
 import { FiEdit, FiCalendar, FiPhoneCall, FiInfo, FiBriefcase, FiMail } from 'react-icons/fi';

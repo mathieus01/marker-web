@@ -69,7 +69,7 @@ export const ButtonGroup = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #6e00ff;
+    background: #078bf5;
     width: fit-content;
     border-radius: 16px;
     padding: 0px 18px;
@@ -81,7 +81,7 @@ export const ButtonGroup = styled.div`
     font-weight: 500;
 
     &:hover {
-      background: #6e39ff;
+      background: #078bfc;
     }
 
     &:last-child {

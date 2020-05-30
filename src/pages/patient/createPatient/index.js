@@ -5,7 +5,6 @@ import { Form } from '@unform/web';
 import Input from '../../../components/Input';
 import DatePicker from '../../../components/DatePicker';
 import Select from '../../../components/Select';
-import Title from '../../../components/Title';
 import { Creators as GroupActions } from '../../../store/ducks/group';
 import { Creators as PatientActions } from '../../../store/ducks/patient';
 import Util from '../../../utils/util';

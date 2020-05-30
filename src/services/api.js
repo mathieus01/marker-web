@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getToken, logout } from './auth';
 
 const api = axios.create({
-  baseURL: 'http://192.168.0.5:3333',
+  baseURL: 'http://api.markeer.com.br/',
 });
 
 api.interceptors.request.use(async (config) => {

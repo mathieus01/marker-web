@@ -87,11 +87,11 @@ export const Tag = styled.span`
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
-  background: #6e00ff;
+  background: #078bf5;
   color: #ffffff;
 
   &:hover {
     box-shadow: 0px 0px 10px #ccc;
-    background: #6e09ff;
+    background: #078bfc;
   }
 `;

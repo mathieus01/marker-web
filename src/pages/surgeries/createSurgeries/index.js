@@ -3,7 +3,6 @@ import Select from '../../../components/Select';
 import Input from '../../../components/Input';
 import DatePicker from '../../../components/DatePicker';
 import { Form } from '@unform/web';
-import Title from '../../../components/Title';
 import ListProcedure from '../../procedures/listProcedure';
 import { Content, InputGroup, ButtonGroup } from './styles';
 import Util from '../../../utils/util';

@@ -1,17 +1,16 @@
-import { Drawer } from '@material-ui/core';
-import AvatarMaleIcon from '../../../assets/images/avatars/2.svg';
-import AvatarFemaleIcon from '../../../assets/images/avatars/14.svg';
-import moment from 'moment';
 import React, { useEffect, useState } from 'react';
-import { FiPlus, FiTrash2, FiEdit } from 'react-icons/fi';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { Creators as PatientActions } from '../../../store/ducks/patient';
-import CreatePatient from '../createPatient';
-import { Container, Content, PageTitle, Button, LinkButton, Card, CardHeader, List, Item } from './styles';
-import Swal from 'sweetalert2';
+import moment from 'moment';
+import { FiEdit, FiPlus, FiTrash2 } from 'react-icons/fi';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Modal from 'react-modal';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import Swal from 'sweetalert2';
+import AvatarFemaleIcon from '../../../assets/images/avatars/14.svg';
+import AvatarMaleIcon from '../../../assets/images/avatars/2.svg';
+import { Creators as PatientActions } from '../../../store/ducks/patient';
+import CreatePatient from '../createPatient';
+import { Button, Card, CardHeader, Container, Content, Item, LinkButton, List, PageTitle } from './styles';
 
 const ListPatient = ({ patientState, getPatientsRequest, removePatientRequest }) => {
   const [addPatient, setAddPatient] = useState(false);

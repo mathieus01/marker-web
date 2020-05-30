@@ -12,11 +12,11 @@ export const Container = styled.aside`
 
   .logo {
     display: flex;
-    padding: 1.5rem 2.5rem;
+    padding: 0.8rem 2.5rem;
     align-items: center;
 
     span {
-      font-size: 3rem;
+      font-size: 38px;
       font-family: 'Kaushan Script';
       letter-spacing: 3px;
       font-weight: 500;

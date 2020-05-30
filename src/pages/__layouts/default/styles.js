@@ -16,8 +16,8 @@ export const Wrapper = styled.div`
     z-index: -1;
     pointer-events: none;
     height: 430px;
-    /* background-color: #078bf5; */
-    background-color: #6e00ff;
+    background-color: #078bf5;
+    /* background-color: #6e39ff; */
     border-bottom-left-radius: 5rem;
   }
 

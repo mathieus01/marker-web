@@ -6,7 +6,6 @@ import { Creators as UserActions } from '../../../store/ducks/user';
 import { Creators as GroupActions } from '../../../store/ducks/group';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Title from '../../../components/Title';
 
 const AddUser = (props) => {
   const [users, setUsers] = useState([]);

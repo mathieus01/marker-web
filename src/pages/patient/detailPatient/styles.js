@@ -98,7 +98,7 @@ export const Card = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #6e00ff;
+        background: #078bf5;
         height: 32px;
         width: 100%;
         border-radius: 16px;
@@ -109,7 +109,7 @@ export const Card = styled.div`
         letter-spacing: 0.5px;
 
         &:hover {
-          background: #6e39ff;
+          background: #078bfc;
         }
 
         span {
@@ -190,7 +190,7 @@ export const Card = styled.div`
       background: transparent;
       width: fit-content;
       padding: 0px 5px;
-      color: #6e39ff;
+      color: #078bf5;
       line-height: 32px;
       border: 0;
       font-size: 16px;

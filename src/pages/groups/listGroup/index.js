@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Drawer } from '@material-ui/core';
 import { FiPlus, FiTrash2, FiEdit } from 'react-icons/fi';
 import AvatarFemaleIcon from '../../../assets/images/avatars/14.svg';
 import CreateGroup from '../createGroup';

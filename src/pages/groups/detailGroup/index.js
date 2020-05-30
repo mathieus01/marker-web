@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Drawer } from '@material-ui/core';
 import { Creators as GroupActions } from '../../../store/ducks/group';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';

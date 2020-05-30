@@ -23,9 +23,10 @@ export const Container = styled.header`
     padding: 10px;
     z-index: 5;
     position: fixed;
-    box-shadow: 0 1px 1px #6e00ff;
+    box-shadow: 0 3px 10px #077af5;
+    border-bottom: none !important;
     width: 100%;
-    background: #6e00ff;
+    background: #078bf5;
 
     div:first-child {
       span {

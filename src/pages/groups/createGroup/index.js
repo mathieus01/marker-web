@@ -5,7 +5,6 @@ import { bindActionCreators } from 'redux';
 import Input from '../../../components/Input';
 import { Creators as GroupActions } from '../../../store/ducks/group';
 import { Content, InputGroup, ButtonGroup } from './styles';
-import Title from '../../../components/Title';
 
 const CreateGroup = ({ group, onClose, updateGroupRequest, saveGroupRequest }) => {
   const formRef = useRef(null);
