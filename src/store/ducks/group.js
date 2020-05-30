@@ -30,7 +30,7 @@ export default function group(state = INITIAL_STATE, actions) {
     case Types.GET_GROUPS_BY_USER_REQUEST:
       return { ...state, loading: true };
     case Types.GET_GROUPS_BY_USER_SUCCESS:
-      const newPage = actions.payload.response.page;
+      const newPage = actions.payload.response.page || 1;
       const lastPage = actions.payload.response.lastPage;
       const groups = actions.payload.response.data;
       const total = actions.payload.response.total;

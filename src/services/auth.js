@@ -1,5 +1,8 @@
 export const TOKEN_KEY = '@amarq-me-Token';
-export const isAuthenticated = () => localStorage.getItem(TOKEN_KEY) !== null;
+export const isAuthenticated = () => {
+  const token = localStorage.getItem(TOKEN_KEY);
+  return token !== null && token !== undefined && token !== 'null' && token !== 'undefined';
+};
 
 export const getToken = () => {
   return localStorage.getItem(TOKEN_KEY);

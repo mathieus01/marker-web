@@ -24,7 +24,7 @@ export default function patient(state = INITIAL_STATE, action) {
     case Types.GET_PATIENTS_REQUEST:
       return { ...state, loading: true };
     case Types.GET_PATIENTS_SUCCESS:
-      const newPage = action.payload.response.page;
+      const newPage = action.payload.response.page || 1;
       const lastPage = action.payload.response.lastPage;
       const patients = action.payload.response.data;
       const total = action.payload.response.total;

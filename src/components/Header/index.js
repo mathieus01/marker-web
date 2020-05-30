@@ -11,7 +11,8 @@ const Header = ({ authState, props }) => {
   const [user, setUser] = useState(null);
   useEffect(() => {
     const token = getToken();
-    if (token) {
+    if (token !== null && token !== 'undefined') {
+      console.log('token', token);
       const { data } = jwtDecode(token);
       setUser(data);
     }
