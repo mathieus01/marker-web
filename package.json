@@ -18,7 +18,7 @@
     "@unform/core": "^2.1.0",
     "@unform/web": "^2.1.0",
     "animate.css": "^3.7.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "connected-react-router": "^6.7.0",
     "date-fns": "^2.10.0",
     "font-awesome": "^4.7.0",
